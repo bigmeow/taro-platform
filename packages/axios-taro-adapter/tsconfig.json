@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "rootDir": "./src",
+    "target": "ES2017",
+    "module": "esnext",
+    "lib": ["es2017", "es2015", "es2015.promise"],
+    "strict": true,
+    "noImplicitAny": false,
+    "noUnusedLocals": true,
+    "noUnusedParameters": false,
+    "moduleResolution": "node",
+    "importHelpers": true,
+    "strictPropertyInitialization": false,
+    "baseUrl": ".",
+    "types": ["node"],
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "declarationDir": "./types"
+  },
+  "include": ["./src"],
+  "exclude": ["node_modules"],
+  "compileOnSave": false
+}
