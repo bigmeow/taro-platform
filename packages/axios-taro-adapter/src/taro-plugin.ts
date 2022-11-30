@@ -67,8 +67,8 @@ export default function (ctx: IPluginContext) {
 
       if (prebundleOptions.enable === false) return;
       prebundleOptions.exclude ||= [];
-      prebundleOptions.exclude.push("axios");
-      printLog(processTypeEnum.REMIND, "@taro-platform/axios-taro-adapter: 将 axios 从预编译中排除\r\n");
+      prebundleOptions.exclude.push("axios", "@taro-platform/axios-taro-adapter");
+      printLog(processTypeEnum.REMIND, "@taro-platform/axios-taro-adapter: 将 axios 和 @taro-platform/axios-taro-adapter 从预编译中排除\r\n");
     }
   });
 }
