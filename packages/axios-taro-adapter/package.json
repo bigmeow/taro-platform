@@ -14,7 +14,8 @@
     }
   },
   "scripts": {
-    "build:lib": "rollup -c --bundleConfigAsCjs"
+    "build:lib": "rollup -c --bundleConfigAsCjs",
+    "release": "git commit -am $npm_package_version && git tag $npm_package_version && git push && git push --tags"
   },
   "keywords": [
     "axios",

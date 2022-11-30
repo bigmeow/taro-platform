@@ -17,7 +17,7 @@ const buildConfig = ({ browser = true, minified = false, ...config }) => {
       {
         file: packageJson.main,
         format: "esm",
-        sourcemap: true,
+        sourcemap: false,
         banner,
         exports: "named"
       }

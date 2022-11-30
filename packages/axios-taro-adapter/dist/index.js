@@ -178,7 +178,7 @@ function defaultTransformRequest(data, headers) {
             // @ts-ignore
             return toURLEncodedForm(data, this.formSerializer).toString();
         }
-        // 处理文件上传
+        // TODO 处理文件上传
         // if ((isFileList = utils.isFileList(data)) || contentType.indexOf('multipart/form-data') > -1) {
         //   const _FormData = this.env && this.env.FormData;
         //   return toFormData(
@@ -198,4 +198,3 @@ function defaultTransformRequest(data, headers) {
 var index = generateMpAdapter(request);
 
 export { index as default, defaultTransformRequest };
-//# sourceMappingURL=index.js.map
