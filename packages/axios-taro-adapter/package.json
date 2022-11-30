@@ -1,6 +1,6 @@
 {
   "name": "@taro-platform/axios-taro-adapter",
-  "version": "1.0.0",
+  "version": "1.0.0-alpha.1",
   "description": "Axios adapter for taro miniprogram",
   "typings": "./types",
   "main": "dist/index.js",
