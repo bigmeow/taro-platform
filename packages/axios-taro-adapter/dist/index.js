@@ -1,4 +1,4 @@
-// Axios-miniprogram-adapter v1.0.0 Copyright (c) 2022 bigMeow(lizong9527@gmail.com) and contributors
+// Axios-miniprogram-adapter v1.0.0-alpha.2 Copyright (c) 2022 bigMeow(lizong9527@gmail.com) and contributors
 import { request } from '@tarojs/taro';
 import { AxiosError, CanceledError } from 'axios';
 import buildFullPath from 'axios/lib/core/buildFullPath';

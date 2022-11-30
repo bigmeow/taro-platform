@@ -1,6 +1,6 @@
 {
   "name": "@taro-platform/axios-taro-adapter",
-  "version": "1.0.0-alpha.1",
+  "version": "1.0.0-alpha.2",
   "description": "Axios adapter for taro miniprogram",
   "typings": "./types",
   "main": "dist/index.js",
@@ -15,7 +15,8 @@
   },
   "scripts": {
     "build:lib": "rollup -c --bundleConfigAsCjs",
-    "release": "git commit -am $npm_package_version && git tag $npm_package_version && git push && git push --tags"
+    "release": "git commit -am $npm_package_version && git tag $npm_package_version && git push && git push --tags",
+    "public": "npm publish --access public"
   },
   "keywords": [
     "axios",

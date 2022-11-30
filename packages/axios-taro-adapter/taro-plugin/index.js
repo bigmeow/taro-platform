@@ -64,8 +64,8 @@ function taroPlugin (ctx) {
             if (prebundleOptions.enable === false)
                 return;
             prebundleOptions.exclude || (prebundleOptions.exclude = []);
-            prebundleOptions.exclude.push("axios");
-            printLog("remind" /* processTypeEnum.REMIND */, "@taro-platform/axios-taro-adapter: 将 axios 从预编译中排除\r\n");
+            prebundleOptions.exclude.push("axios", "@taro-platform/axios-taro-adapter");
+            printLog("remind" /* processTypeEnum.REMIND */, "@taro-platform/axios-taro-adapter: 将 axios 和 @taro-platform/axios-taro-adapter 从预编译中排除\r\n");
         }
     });
 }
