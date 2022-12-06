@@ -39,7 +39,7 @@ function taroPlugin (ctx) {
         });
         printLog("remind" /* processTypeEnum.REMIND */, "@taro-platform/axios-taro-adapter: 移除 axios 中不适用小程序环境的默认适配器\r\n");
         /** 限定匹配范围在axios模块中 */
-        const inAxiosReg = /node_modules\/axios\//;
+        const inAxiosReg = /(\/|\\)(node_modules)(\/|\\)(axios)(\/|\\)/;
         // 将 axios 库内部引用的 2个默认 适配器去除掉
         chain.merge({
             externals: [
