@@ -16,7 +16,7 @@ export function generateMpAdapter<R extends Function>(request: R): AxiosAdapter 
       const url = buildURL(fullPath, config.params, config.paramsSerializer);
       const method = (config.method && config.method.toUpperCase()) || "GET";
       // @ts-ignore
-      const requestHeaders = AxiosHeaders.from(config.headers).normalize();
+      const requestHeaders = AxiosHeaders.from({ ...config.headers }).normalize();
       const requestData = config.data;
       const { responseType } = config;
       // console.log("序列化后的请求头:", requestHeaders);
